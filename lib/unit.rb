@@ -7,4 +7,8 @@ class Unit
     @attack_power = attack_power
   end
 
+  def damage(ap)
+    @health_points -= ap
+  end
+
 end

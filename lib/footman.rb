@@ -6,4 +6,8 @@ class Footman < Unit
     super(60, 10)
   end
 
+  def attack!(enemy)
+    enemy.damage(attack_power)
+  end
+
 end
