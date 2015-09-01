@@ -1,11 +1,12 @@
 class Barracks < Building
 
-  attr_reader :gold, :food
+  attr_reader :gold, :food, :lumber
 
   def initialize
     super(500)
     @gold = 1000
     @food = 80
+    @lumber = 500
   end
 
   def can_train_footman?
