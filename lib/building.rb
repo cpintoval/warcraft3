@@ -14,4 +14,8 @@ class Building
     end
   end
 
+  def destroyed?
+    health_points == 0
+  end
+
 end
