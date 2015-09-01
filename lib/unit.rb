@@ -11,4 +11,8 @@ class Unit
     @health_points -= ap
   end
 
+  def attack!(enemy)
+    enemy.damage(attack_power)
+  end
+
 end
