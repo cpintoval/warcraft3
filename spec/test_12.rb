@@ -1,5 +1,6 @@
 require_relative 'spec_helper'
 
+# Enhancement 2
 # Units start off alive but they die if their HP hits 0 or lower. This is usually a result of receiving damage from 
 # combat.
 
