@@ -7,7 +7,11 @@ class Building
   end
 
   def damage(ap)
-    @health_points -= ap
+    if health_points - ap >= 0
+      @health_points -= ap
+    else
+      @health_points = 0
+    end
   end
 
 end
