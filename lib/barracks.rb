@@ -10,4 +10,14 @@ class Barracks
   def can_train_footman?
     true
   end
+
+  def train_footman
+    if @gold >= 135 && @food >= 2
+      @gold -= 135
+      @food -= 2
+      Footman.new
+    else
+      nil
+    end
+  end
 end
