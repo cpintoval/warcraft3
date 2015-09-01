@@ -1,8 +1,9 @@
-class Barracks
+class Barracks < Building
 
   attr_reader :gold, :food
 
   def initialize
+    super(500)
     @gold = 1000
     @food = 80
   end
