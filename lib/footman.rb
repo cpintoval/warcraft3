@@ -7,7 +7,7 @@ class Footman < Unit
   end
 
   def attack!(enemy)
-    if !dead? && !enemy.destroyed? && enemy.is_a?(Building)
+    if !dead? && enemy.is_a?(Building) && !enemy.destroyed?
       enemy.damage((attack_power / 2.0).ceil)
     else
       super
